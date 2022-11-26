@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --main-bg-color: #2874f0;
+  }
+footer {
+    background-color: var(--main-bg-color);
+    color: white;
+    height: 12vh;
+    font-family: 'Bebas Neue', cursive;
+}
+
+header {
+    
+    background-color:var(--main-bg-color)
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 60px;
+}
+
+nav ul li {
+    list-style: none;
+    padding: 0 23px;
+}   
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Bebas Neue', cursive;
+}
+
+nav {
+    display: flex;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 88px;
+    padding: 0 25px ;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+}
+
+.search input {
+    width: 25vw;
+    height: 30px;
+    border-radius: 3px;
+    padding-left: 10px;
+}
+.btn {
+    background-color: var(--main-bg-color);
+    font-family: 'Bebas Neue', cursive;
+    cursor: pointer;
+}
+
+.slider {
+    margin: 12px auto;
+    width: 80vw;
+    background-color: aqua;
+    overflow: hidden;
+}
+
+.slider img {
+    width: 1250px;
+    height: 480px;
+}
+
+.card {
+    max-width: 88vw;
+    margin: 10px auto;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(233, 233, 233);
+    overflow: hidden;
+}
+
+.card-item {
+    margin: 5px;
+    padding: 20px 35px;
+    background-color: white;
+    text-align: center;
+}
+
+.category h2 {
+    font-family: 'Open Sans', sans-serif;
+    margin: 10px;
+    text-align: center;
+}
+
+.card-item img {
+    height: 140px;
+    margin-bottom: 10px;
+}
+
+.card-item img:hover {
+    transform: scale(1.2);
+    transition: transform 0.2s ease-in-out;
+}
+
+.category {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.category button {
+    width: 70px;
+    height: 40px;
+    margin: 10px;
+}
+
+@media only screen and (max-width: 800px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+    .logo {
+        height: 20px;
+        margin: 15px;
+    }
+    nav ul {
+        height: 30px;
+    }
+}   
+
+@media screen and (max-width: 1100px) { 
+    nav {
+        justify-content: center;
+    }
+
+    .card {
+        justify-content: flex-start;
+    }
+}
+
+.fashion .card-item {
+    padding: 20px 42px;
+}

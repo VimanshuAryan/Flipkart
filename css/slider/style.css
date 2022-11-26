@@ -1,0 +1,18 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.slider__container img {
+    height: 400px;
+    width: 500px;
+    margin: 20px;
+}
+
+.slider__container {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
